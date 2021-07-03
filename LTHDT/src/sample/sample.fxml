@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="178.0" prefWidth="1018.0" style="-fx-background-color: F04049;">
+         <children>
+            <Label layoutX="202.0" layoutY="54.0" prefHeight="70.0" prefWidth="614.0" text="HỆ THỐNG QUẢN LÝ TỐT NGHIỆP SINH VIÊN" textFill="#faf0f0">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="111.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/682px-Logo_Đại_học_Bách_Khoa_Hà_Nội.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TabPane layoutY="176.0" prefHeight="461.0" prefWidth="1018.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="GIỚI THIỆU     ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="268.0" layoutY="30.0" text="HỆ THỐNG QUẢN LÝ TỐT NGHIỆP SINH VIÊN" textFill="#ef0101">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="50.0" layoutY="80.0" text="Hệ thống gồm các chức năng:" textFill="#f23838">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="120.0" text="- Thêm thông tin sinh viên.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="160.0" text="- Xóa thông tin sinh viên.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="200.0" text="- Sửa thông tin sinh viên.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="240.0" text="- Hiển thị danh sách sinh viên.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="280.0" text="- Hiển thị danh sách sinh viên đủ điều kiện tốt nghiệp.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="320.0" text="- Tìm kiếm sinh viên theo tên, mã số sinh viên, niên khóa.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="799.0" layoutY="325.0" text="Thực hiện:" />
+                        <Label layoutX="865.0" layoutY="325.0" text="Nguyễn Hữu Tiến" />
+                        <Label layoutX="865.0" layoutY="350.0" text="Phan Chính Quốc" />
+                        <Label layoutX="865.0" layoutY="375.0" text="Khổng Thế Học" />
+                        <Label layoutX="550.0" layoutY="80.0" text="Sinh viên học theo 1 trong 2 hình thức học:" textFill="#f23838">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="575.0" layoutY="120.0" text="- Chương trình mẫu">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="575.0" layoutY="160.0" text="- Tín chỉ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="550.0" layoutY="200.0" text="Điều kiện tốt nghiệp:" textFill="#f23838">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="575.0" layoutY="240.0" text="- Với hình thức học theo Chương trình mẫu: GPA &gt; 5.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="575.0" layoutY="280.0" text="- Với hình thức học theo Tín chỉ: Số tín chỉ &gt; 160">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="THÊM SINH VIÊN     ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="836.0">
+                     <children>
+                        <Label layoutX="229.0" layoutY="83.0" text="Nhập tên sinh viên" />
+                        <Label layoutX="229.0" layoutY="123.0" text="Nhập mã số sinh viên" />
+                        <Label layoutX="229.0" layoutY="163.0" text="Nhập niên khóa" />
+                        <Label layoutX="229.0" layoutY="203.0" prefHeight="18.0" prefWidth="142.0" text="Chọn hình thức học tập" />
+                        <Label layoutX="229.0" layoutY="243.0" text="Nhập số tín chỉ" />
+                        <Label layoutX="229.0" layoutY="283.0" text="Nhập GPA " />
+                        <TextField fx:id="Name" layoutX="450.0" layoutY="79.0" prefHeight="26.0" prefWidth="330.0" />
+                        <TextField fx:id="Id" layoutX="450.0" layoutY="119.0" prefHeight="26.0" prefWidth="330.0" />
+                        <TextField fx:id="Year" layoutX="450.0" layoutY="159.0" prefHeight="26.0" prefWidth="330.0" />
+                         <Pane layoutX="450.0" layoutY="198.0" prefHeight="35.0" prefWidth="326.0">
+                             <children>
+                                 <RadioButton fx:id="TinChi" layoutY="5.0" mnemonicParsing="false" text="Tín chỉ">
+                                     <toggleGroup>
+                                         <ToggleGroup fx:id="group" />
+                                     </toggleGroup></RadioButton>
+                                 <RadioButton fx:id="CTMau" layoutX="188.0" layoutY="5.0" mnemonicParsing="false" text="Chương trình mẫu" toggleGroup="$group" />
+                             </children>
+                         </Pane>
+                        <TextField fx:id="SoTC" layoutX="450.0" layoutY="239.0" prefHeight="26.0" prefWidth="330.0" />
+                        <TextField fx:id="Gpa" layoutX="450.0" layoutY="279.0" prefHeight="26.0" prefWidth="330.0" />
+                        <Button layoutX="441.0" layoutY="332.0" mnemonicParsing="false" onAction="#xacNhanThemSV" text="Xác nhận" fx:id="xacNhanTSV" />
+                        <Label layoutX="382.0" layoutY="20.0" text="THÊM SINH VIÊN" textFill="#ef0101">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="229.0" layoutY="256.0" text="*(nếu SV học Tín chỉ)" textFill="#ef0101" />
+                        <Label layoutX="229.0" layoutY="296.0" text="*(nếu SV học Chương trình mẫu)" textFill="#ef0101" />
+                        <Label layoutX="229.0" layoutY="137.0" text="*(mã số phải chính xác)" textFill="#ef0101" />
+
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="XÓA THÔNG TIN     ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="172.0" layoutY="110.0" text="Nhập mã số sinh viên cần xóa" />
+                        <TextField fx:id="Xoa_mssv" layoutX="417.0" layoutY="107.0" prefHeight="26.0" prefWidth="242.0" />
+                        <Button layoutX="727.0" layoutY="105.0" mnemonicParsing="false" onAction="#xacNhanXoaSV" text="Xác nhận" />
+                        <Label layoutX="382.0" layoutY="20.0" text="XÓA THÔNG TIN SINH VIÊN" textFill="#ef0101">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text=" SỬA THÔNG TIN    ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="382.0" layoutY="20.0" text="SỬA THÔNG TIN SINH VIÊN" textFill="#ef0101">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="fixtable" layoutX="84.0" layoutY="94.0" prefHeight="61.0" prefWidth="847.0">
+                           <columns>
+                              <TableColumn fx:id="fixnameColumn" prefWidth="232.0000457763672" text="Họ và tên" />
+                              <TableColumn fx:id="fixidColumn" minWidth="0.0" prefWidth="141.59991455078125" text="Mã số sinh viên" />
+                              <TableColumn fx:id="fixyearColumn" minWidth="0.0" prefWidth="104.00006103515625" text="Niên khóa" />
+                              <TableColumn fx:id="fixhinhthuchocColumn" prefWidth="138.39996337890625" text="Hình thức học" />
+                              <TableColumn fx:id="fixsotinchiColumn" prefWidth="121.60009765625" text="Số tín chỉ tích lũy" />
+                              <TableColumn fx:id="fixgpaColumn" prefWidth="106.4000122070313" text="GPA" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="getMSSV" layoutX="429.0" layoutY="55.0" prefHeight="26.0" prefWidth="182.0" />
+                        <TextField fx:id="fixName" layoutX="224.0" layoutY="192.0" />
+                        <TextField fx:id="fixId" layoutX="454.0" layoutY="192.0" />
+                        <TextField fx:id="fixYear" layoutX="726.0" layoutY="192.0" />
+                        <Label layoutX="142.0" layoutY="192.0" text="Tên SV" />
+                        <Label layoutX="411.0" layoutY="192.0" text="MSSV" />
+                        <Label layoutX="663.0" layoutY="192.0" text="Niên khóa" />
+                        <Button layoutX="224.0" layoutY="225.0" mnemonicParsing="false" onAction="#suaTen" prefHeight="26.0" prefWidth="147.0" text="Sửa tên SV" />
+                        <Button layoutX="457.0" layoutY="226.0" mnemonicParsing="false" onAction="#suaMSSV" prefHeight="26.0" prefWidth="145.0" text="Sửa MSSV" />
+                        <Button layoutX="726.0" layoutY="226.0" mnemonicParsing="false" onAction="#suaKhoa" prefHeight="26.0" prefWidth="149.0" text="Sửa niên khóa" />
+                        <TextField fx:id="fixSoTC" layoutX="224.0" layoutY="298.0" />
+                        <TextField fx:id="fixGpa" layoutX="456.0" layoutY="298.0" />
+                        <Label layoutX="142.0" layoutY="301.0" text="Số tín chỉ" />
+                        <Label layoutX="411.0" layoutY="301.0" text="GPA" />
+                        <Button layoutX="222.0" layoutY="330.0" mnemonicParsing="false" onAction="#suaSoTC" prefHeight="26.0" prefWidth="150.0" text="Sửa số tín chỉ" />
+                        <Button layoutX="457.0" layoutY="330.0" mnemonicParsing="false" onAction="#suaGpa" prefHeight="26.0" prefWidth="148.0" text="Sửa GPA" />
+                        <Label layoutX="224.0" layoutY="59.0" text="Nhập mã số sinh viên cần sửa" />
+                        <Button layoutX="657.0" layoutY="59.0" mnemonicParsing="false" onAction="#xacNhanSua" text="Xác nhận và hiển thị thông tin" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="DANH SÁCH SINH VIÊN   ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table" layoutX="78.0" layoutY="65.0" prefHeight="254.0" prefWidth="847.0">
+                          <columns>
+                            <TableColumn fx:id="nameColumn" prefWidth="232.0000457763672" text="Họ và tên" />
+                              <TableColumn fx:id="idColumn" minWidth="0.0" prefWidth="141.59991455078125" text="Mã số sinh viên" />
+                              <TableColumn fx:id="yearColumn" minWidth="0.0" prefWidth="104.00006103515625" text="Niên khóa" />
+                              <TableColumn fx:id="hinhthuchocColumn" prefWidth="138.39996337890625" text="Hình thức học" />
+                              <TableColumn fx:id="sotinchiColumn" prefWidth="121.60009765625" text="Số tín chỉ tích lũy" />
+                              <TableColumn fx:id="gpaColumn" prefWidth="111.9998779296875" text="GPA" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="415.0" layoutY="329.0" mnemonicParsing="false" onAction="#inDSSV" text="Cập nhật danh sách sinh viên" />
+                        <Label layoutX="382.0" layoutY="20.0" text="DANH SÁCH SINH VIÊN" textFill="#ef0101">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="DANH SÁCH TỐT NGHIỆP   ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table1" layoutX="78.0" layoutY="65.0" prefHeight="254.0" prefWidth="847.0">
+                           <columns>
+                              <TableColumn fx:id="nameColumn1" prefWidth="232.0000457763672" text="Họ và tên" />
+                              <TableColumn fx:id="idColumn1" minWidth="0.0" prefWidth="141.59991455078125" text="Mã số sinh viên" />
+                              <TableColumn fx:id="yearColumn1" minWidth="0.0" prefWidth="104.00006103515625" text="Niên khóa" />
+                              <TableColumn fx:id="hinhthuchocColumn1" prefWidth="138.39996337890625" text="Hình thức học" />
+                              <TableColumn fx:id="sotinchiColumn1" prefWidth="121.60009765625" text="Số tín chỉ tích lũy" />
+                              <TableColumn fx:id="gpaColumn1" prefWidth="111.9998779296875" text="GPA" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="416.0" layoutY="330.0" mnemonicParsing="false" onAction="#XetTN" text="Cập nhật danh sách tốt nghiệp" />
+                        <Label layoutX="382.0" layoutY="20.0" text="DANH SÁCH TỐT NGHIỆP" textFill="#ef0101">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="TÌM KIẾM SINH VIÊN   ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table2" layoutX="78.0" layoutY="194.0" prefHeight="178.0" prefWidth="847.0">
+                           <columns>
+                              <TableColumn fx:id="nameColumn2" prefWidth="232.0000457763672" text="Họ và tên" />
+                              <TableColumn fx:id="idColumn2" minWidth="0.0" prefWidth="141.59991455078125" text="Mã số sinh viên" />
+                              <TableColumn fx:id="yearColumn2" minWidth="0.0" prefWidth="104.00006103515625" text="Niên khóa" />
+                              <TableColumn fx:id="hinhthuchocColumn2" prefWidth="138.39996337890625" text="Hình thức học" />
+                              <TableColumn fx:id="sotinchiColumn2" prefWidth="121.60009765625" text="Số tín chỉ tích lũy" />
+                              <TableColumn fx:id="gpaColumn2" prefWidth="111.9998779296875" text="GPA" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="findName" layoutX="224.0" layoutY="94.0" />
+                        <TextField fx:id="findId" layoutX="429.0" layoutY="94.0" prefHeight="26.0" prefWidth="159.0" />
+                        <TextField fx:id="findYear" layoutX="633.0" layoutY="94.0" prefHeight="26.0" prefWidth="142.0" />
+                        <Label layoutX="382.0" layoutY="20.0" text="TÌM KIẾM SINH VIÊN" textFill="#ef0101">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="261.0" layoutY="67.0" text="Tên sinh viên" />
+                        <Label layoutX="462.0" layoutY="67.0" text="Mã số sinh viên" />
+                        <Label layoutX="667.0" layoutY="67.0" text="Niên khóa" />
+                        <Button layoutX="222.0" layoutY="134.0" mnemonicParsing="false" onAction="#timTheoTen" prefWidth="151.0" text="Tìm theo tên" />
+                        <Button layoutX="429.0" layoutY="134.0" mnemonicParsing="false" onAction="#timTheoMSSV" prefHeight="26.0" prefWidth="160.0" text="Tìm theo mã số sinh viên" />
+                        <Button layoutX="635.0" layoutY="134.0" mnemonicParsing="false" onAction="#timTheoYear" prefHeight="26.0" prefWidth="142.0" text="Tìm theo niên khóa" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
